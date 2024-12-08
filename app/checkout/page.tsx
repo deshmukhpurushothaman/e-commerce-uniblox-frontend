@@ -13,7 +13,7 @@ const Checkout = () => {
   const handleCheckout = () => {
     axios
       .post(
-        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/api/cart/checkout/${cartId}`,
+        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/cart/checkout/${cartId}`,
         {
           discountCode,
         }

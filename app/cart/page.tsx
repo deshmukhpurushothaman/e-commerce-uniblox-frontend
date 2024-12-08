@@ -30,7 +30,7 @@ const Cart = () => {
     setLoading(true);
     try {
       const response = await axios.get(
-        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/api/cart`
+        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/cart`
       );
       setCart(response.data.data);
     } catch (error) {
@@ -48,7 +48,7 @@ const Cart = () => {
     setUpdating(true);
     try {
       await axios.put(
-        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/api/cart/update/${cart._id}/${itemId}`,
+        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/cart/update/${cart._id}/${itemId}`,
         { quantity }
       );
       fetchCart(); // Refresh the cart
@@ -63,7 +63,7 @@ const Cart = () => {
     setUpdating(true);
     try {
       await axios.delete(
-        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/api/cart/remove/${cart._id}/${itemId}`
+        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/cart/remove/${cart._id}/${itemId}`
       );
       fetchCart(); // Refresh the cart
     } catch (error) {

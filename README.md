@@ -2,7 +2,26 @@ This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+
+```bash
+git clone https://github.com/deshmukhpurushothaman/e-commerce-uniblox-frontend.git
+cd e-commerce-uniblox-frontend
+```
+
+2. **Install dependencies:** Make sure you have **Node.js** and npm installed, then run:
+
+```bash
+npm install
+```
+
+3. **Configure environment variables:** Create a `.env` file in the root directory and add the following:
+
+```env
+NEXT_PUBLIC_BACKEND_APP_BASE_URL = http://localhost:8000/api
+```
+
+4. Run the development server:
 
 ```bash
 npm run dev

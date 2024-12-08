@@ -9,7 +9,7 @@ const Products = () => {
 
   useEffect(() => {
     axios
-      .get(`${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/api/products`)
+      .get(`${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/products`)
       .then((response) => {
         console.log('preodics ', response);
         setProducts(response.data);

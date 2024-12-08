@@ -15,9 +15,7 @@ const ProductDetail = () => {
   useEffect(() => {
     if (id) {
       axios
-        .get(
-          `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/api/products/${id}`
-        )
+        .get(`${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/products/${id}`)
         .then((response) => setProduct(response.data))
         .catch((error) => console.log(error));
     }
@@ -25,14 +23,11 @@ const ProductDetail = () => {
   console.log(product);
   const handleAddToCart = () => {
     axios
-      .post(
-        `${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/api/cart/add-item`,
-        {
-          productId: product._id,
-          quantity,
-          purchasePrice: product.price,
-        }
-      )
+      .post(`${process.env.NEXT_PUBLIC_BACKEND_APP_BASE_URL}/cart/add-item`, {
+        productId: product._id,
+        quantity,
+        purchasePrice: product.price,
+      })
       .then(() => alert('Added to cart'))
       .catch((error) => console.log(error));
   };
