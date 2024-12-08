@@ -1,27 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# E-commerce Frontend with Next.js
+
+This is an E-commerce application built using Next.js for modern React-based development, TailwindCSS for styling, and Material-UI for pre-designed components. It serves as the frontend for an e-commerce platform, providing a sleek and user-friendly interface for online shopping experiences.
+
+## Table of Contents
+
+- [Introduction](#introduction)
+- [Technologies](#technologies)
+- [Getting Started](#getting-started)
+  - [Clone the Repository](#1-clone-the-repository)
+  - [Install Dependencies](#2-install-dependencies)
+  - [Configure Environment Variables](#3-configure-environment-variables)
+  - [Run the Development Server](#4-run-the-development-server)
+
+## Introduction
+
+This project aims to deliver an efficient and feature-rich e-commerce platform with a focus on modern UI/UX. Customers can browse products, add them to their cart, and proceed to checkout seamlessly. With scalable architecture and reusable components, this application is designed to handle diverse e-commerce scenarios, from small businesses to large enterprises.
+
+## Technologies
+
+The following technologies are used in this project:
+
+- **Next.js:** A React framework for building server-rendered applications with ease.
+- **TailwindCSS:** A utility-first CSS framework for creating modern and responsive designs.
+- **Material-UI:** A comprehensive library of React components that implement Google's Material Design.
 
 ## Getting Started
 
-1. Clone the repository
+### 1. Clone the Repository
 
 ```bash
 git clone https://github.com/deshmukhpurushothaman/e-commerce-uniblox-frontend.git
 cd e-commerce-uniblox-frontend
 ```
 
-2. **Install dependencies:** Make sure you have **Node.js** and npm installed, then run:
+### 2. Install Dependencies
+
+Make sure you have Node.js and npm installed, then run:
 
 ```bash
 npm install
 ```
 
-3. **Configure environment variables:** Create a `.env` file in the root directory and add the following:
+### 3. Configure Environment Variables
+
+Create a .env file in the root directory and add the following:
 
 ```env
-NEXT_PUBLIC_BACKEND_APP_BASE_URL = http://localhost:8000/api
+NEXT_PUBLIC_BACKEND_APP_BASE_URL=http://localhost:8000/api
 ```
 
-4. Run the development server:
+### 4. Run the Development Server
 
 ```bash
 npm run dev
@@ -29,27 +57,6 @@ npm run dev
 yarn dev
 # or
 pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
-
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Open http://localhost:3000 with your browser to see the application.
